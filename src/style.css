@@ -1,0 +1,21 @@
+body {
+  font-family: poppins;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  padding: 100px;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/john-williams8.jpeg);
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer {
+  text-align: center;
+}
