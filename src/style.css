@@ -15,7 +15,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-h3 {
+header h3 {
   font-weight: 800;
   font-style: ExtraBold;
   font-size: 24px;
@@ -23,14 +23,14 @@ h3 {
   letter-spacing: 5px;
   text-align: center;
 }
-h1 {
+header h1 {
   font-weight: 800;
   font-style: ExtraBold;
   font-size: 128px;
   line-height: 100%;
   letter-spacing: 0%;
 }
-h2 {
+header h2 {
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -38,8 +38,30 @@ h2 {
   letter-spacing: 0%;
   text-align: center;
 }
-
+.learn-more {
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.oscar-movies {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+.soundtracks {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: red;
+  text-align: center;
+}
 footer {
   font-family: poppins;
   text-align: center;
+}
+footer .footer-grid-container {
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
