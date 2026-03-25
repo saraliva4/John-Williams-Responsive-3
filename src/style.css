@@ -1,8 +1,7 @@
 body {
-  font-family: poppins;
+  font-family: Plus Jakarta Sans;
 }
 .container {
-  max-width: 900px;
   margin: 0 auto;
 }
 header {
@@ -10,12 +9,37 @@ header {
   text-align: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/john-williams8.jpeg);
+    url(../img/john-williams1.jpeg);
   color: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+h3 {
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 5px;
+  text-align: center;
+}
+h1 {
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
 footer {
+  font-family: poppins;
   text-align: center;
 }
