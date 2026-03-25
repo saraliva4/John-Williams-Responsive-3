@@ -44,8 +44,10 @@ header h2 {
   border-radius: 10px;
 }
 .oscar-movies {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
   background-color: red;
 }
 .soundtracks {
