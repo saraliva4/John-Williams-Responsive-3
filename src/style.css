@@ -3,6 +3,7 @@ body {
 }
 .container {
   margin: 0 auto;
+  max-width: 1000px;
 }
 header {
   padding: 100px;
@@ -39,15 +40,32 @@ header h2 {
   text-align: center;
 }
 .learn-more {
-  background-color: orange;
-  padding: 5px 10px;
-  border-radius: 10px;
+  background-color: #fb5c8d;
+  padding: 16px 32px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.learn-more:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.description-grid-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+main img {
+  max-width: 100%;
+  height: auto;
 }
 .oscar-movies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
+}
+.oscar-movies div {
   background-color: red;
 }
 .soundtracks {
