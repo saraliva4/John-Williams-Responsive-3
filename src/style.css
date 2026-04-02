@@ -1,5 +1,6 @@
 body {
   font-family: Plus Jakarta Sans;
+  background-color: #292547;
 }
 .container {
   margin: 0 auto;
@@ -59,6 +60,7 @@ main h4 {
   line-height: 100%;
   letter-spacing: 5px;
   text-transform: uppercase;
+  display: block;
   border-left: 1px solid #fb5c8d;
 }
 main {
@@ -79,23 +81,69 @@ section {
   max-width: 100%;
   height: auto;
 }
-.movies-section h3,
 .movies-section h4,
-.soundtracks-section h3,
 .soundtracks-section h4 {
   text-align: center;
 }
 .movies-section {
   background-color: #1e1b2c;
+  padding: 30px;
 }
+.movies-section h3,
+.soundtracks-section h3 {
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+  color: #fff;
+  margin: 20 auto;
+}
+
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  text-align: center;
 }
 .movie-grid-element {
-  background-color: red;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: left;
+}
+.movie-grid-element div {
+  margin: 24px 32px;
+}
+
+.movie-grid-element h5 {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.movie-grid-element p {
+  font-family: Plus Jakarta Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.movie-grid-element h6 {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.movie-grid-element a {
+  display: block;
 }
 .soundtracks-grid {
   display: grid;
