@@ -45,6 +45,7 @@ header h2 {
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .learn-more:hover {
   opacity: 0.8;
