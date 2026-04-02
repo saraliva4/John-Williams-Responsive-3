@@ -47,41 +47,90 @@ header h2 {
   text-decoration: none;
 }
 .learn-more:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
 }
-.description-grid-element {
+main h4 {
+  color: #fb5c8d;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-left: 1px solid #fb5c8d;
+}
+main {
+  background-color: #12101d;
+}
+section {
+  margin: 0px auto;
+}
+.description-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 10px;
 }
-main img {
+.description-grid-element {
+  background-color: red;
+}
+.description-section img {
   max-width: 100%;
   height: auto;
 }
-.oscar-movies {
+.movies-section h3,
+.movies-section h4,
+.soundtracks-section h3,
+.soundtracks-section h4 {
+  text-align: center;
+}
+.movies-section {
+  background-color: #1e1b2c;
+}
+.movies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
 }
-.oscar-movies div {
+.movie-grid-element {
   background-color: red;
 }
-.soundtracks {
+.soundtracks-grid {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: red;
   text-align: center;
+}
+.soundtrack-grid-element {
+  background-color: red;
 }
 footer {
   font-family: poppins;
   text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/john-williams4.webp);
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-footer .footer-grid-container {
-  background-color: green;
+.footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.footer-grid-element {
+  background-color: green;
+}
+@media (max-width: 600px) {
+  .description-grid,
+  .movies-grid,
+  .soundtracks-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
