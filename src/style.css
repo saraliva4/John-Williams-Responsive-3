@@ -4,6 +4,10 @@ body {
 }
 .container {
   margin: 0 auto;
+  max-width: 1200px;
+}
+section {
+  margin: 0 auto;
   max-width: 1000px;
 }
 header {
@@ -40,7 +44,7 @@ header h2 {
   letter-spacing: 0%;
   text-align: center;
 }
-.learn-more {
+.learn-more-link {
   background-color: #fb5c8d;
   padding: 16px 32px;
   border-radius: 5px;
@@ -48,7 +52,7 @@ header h2 {
   text-decoration: none;
   text-transform: uppercase;
 }
-.learn-more:hover {
+.learn-more-link:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -151,9 +155,9 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   text-align: center;
+  margin: 20px;
 }
 .soundtrack-grid-element {
-  background-color: red;
 }
 footer {
   font-family: poppins;
