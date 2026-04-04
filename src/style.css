@@ -1,5 +1,5 @@
 body {
-  font-family: Plus Jakarta Sans;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #292547;
 }
 .container {
@@ -11,7 +11,7 @@ section {
   padding: 50px;
 }
 header {
-  padding: 100px;
+  padding: 150px;
   text-align: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -26,15 +26,18 @@ header h3 {
   font-size: 24px;
   letter-spacing: 5px;
   text-align: center;
+  text-transform: uppercase;
 }
 header h1 {
   font-weight: 800;
   font-size: 128px;
+  margin-bottom: 0px;
 }
 header h2 {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
+  margin-top: 10px;
 }
 .learn-more-link {
   background-color: #fb5c8d;
@@ -43,6 +46,8 @@ header h2 {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
 }
 .learn-more-link:hover {
   opacity: 0.8;
@@ -54,7 +59,7 @@ main h4 {
   font-size: 13px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
   border-left: 3px solid #fb5c8d;
   padding-left: 10px;
 }
@@ -67,13 +72,16 @@ main {
   gap: 15px;
   color: #fff;
 }
-
+.description-header h4 {
+  margin: 0;
+}
 .description-section img {
   max-width: 100%;
   height: auto;
+  margin-top: 4px;
 }
-.movies-section h4,
-.soundtracks-section h4 {
+.movies-section,
+.soundtracks-section {
   text-align: center;
 }
 .movies-section {
@@ -87,7 +95,7 @@ main {
   text-align: center;
   opacity: 0.7;
   color: #fff;
-  margin: 20 auto;
+  margin: 0px auto 50px;
 }
 
 .movies-grid {
@@ -100,7 +108,7 @@ main {
   border-radius: 10px;
   text-align: left;
 }
-.movie-grid-element div {
+.card-content {
   margin: 24px 24px;
 }
 
@@ -121,6 +129,7 @@ main {
   margin: 0;
 }
 .movie-grid-element a {
+  text-align: center;
   display: block;
 }
 .soundtracks-grid {
@@ -131,17 +140,17 @@ main {
   text-align: center;
 }
 footer {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/john-williams4.webp);
   color: #fff;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 footer h6 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 24px;
   margin: 0;
@@ -162,17 +171,51 @@ footer a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
 }
-.footer-grid-element {
-}
+
 @media (max-width: 600px) {
+  header {
+    padding: 60px 20px;
+  }
+
+  header h1 {
+    font-size: 56px;
+  }
+
+  header h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  header h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .description-header {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .description-link {
+    text-align: center;
+  }
+
   .description-grid,
   .movies-grid,
   .soundtracks-grid,
   .footer-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  }
+
+  .movies-section h3,
+  .soundtracks-section h3 {
+    font-size: 32px;
   }
 }
